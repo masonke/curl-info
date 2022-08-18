@@ -16,7 +16,7 @@ Timing\n
 DNS/Name Lookup:   %{time_namelookup}\n
 TCP connect time:  %{time_connect}\n
 TLS connect time:  %{time_appconnect}\n
-Pre-transfer time: %{time_pretransfer} (this is pure cpu time)\n
+Pre-transfer time: %{time_pretransfer}\n
 Redirect time:     %{time_redirect}\n
 Start transfer:    %{time_starttransfer}\n
                      ----------\n
