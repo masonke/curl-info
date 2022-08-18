@@ -8,9 +8,4 @@
 # 
 
 .DS_Store
-*.pac
-history.*
-proxy-exports.txt
-1pw/
-custom/
-zsh_history
+curl-timing.png
