@@ -33,6 +33,7 @@ Download speed: %{speed_download} Bytes/s\n
 Upload speed:   %{speed_upload} Bytes/s\n
 \n
 \n
+\n
 # Basic Usage:\n
 ---------------------------------------------\n
 # curl -L -w "@curl-times.txt" -H "Host: www.example.com" -o /dev/null https://www.example.com/v1/foo  \n
