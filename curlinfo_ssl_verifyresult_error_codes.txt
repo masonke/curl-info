@@ -1,0 +1,93 @@
+From the curl Write out parameter `ssl_verify_result`, which is the result of the SSL peer certificate verification when requested. 0 means the verification was successful.
+
+These codes are located in the x509_vfy.h header file.
+https://github.com/onesignal/openssl/blob/main/include/openssl/x509_vfy.h
+
+X509_V_Ok                                       0
+X509_V_Err_Unspecified                          1
+X509_V_Err_Unable_To_Get_Issuer_Cert            2
+X509_V_Err_Unable_To_Get_Crl                    3
+X509_V_Err_Unable_To_Decrypt_Cert_Signature     4
+X509_V_Err_Unable_To_Decrypt_Crl_Signature      5
+X509_V_Err_Unable_To_Decode_Issuer_Public_Key   6
+X509_V_Err_Cert_Signature_Failure               7
+X509_V_Err_Crl_Signature_Failure                8
+X509_V_Err_Cert_Not_Yet_Valid                   9
+X509_V_Err_Cert_Has_Expired                     10
+X509_V_Err_Crl_Not_Yet_Valid                    11
+X509_V_Err_Crl_Has_Expired                      12
+X509_V_Err_Error_In_Cert_Not_Before_Field       13
+X509_V_Err_Error_In_Cert_Not_After_Field        14
+X509_V_Err_Error_In_Crl_Last_Update_Field       15
+X509_V_Err_Error_In_Crl_Next_Update_Field       16
+X509_V_Err_Out_Of_Mem                           17
+X509_V_Err_Depth_Zero_Self_Signed_Cert          18
+X509_V_Err_Self_Signed_Cert_In_Chain            19
+X509_V_Err_Unable_To_Get_Issuer_Cert_Locally    20
+X509_V_Err_Unable_To_Verify_Leaf_Signature      21
+X509_V_Err_Cert_Chain_Too_Long                  22
+X509_V_Err_Cert_Revoked                         23
+X509_V_Err_Invalid_Ca                           24
+X509_V_Err_Path_Length_Exceeded                 25
+X509_V_Err_Invalid_Purpose                      26
+X509_V_Err_Cert_Untrusted                       27
+X509_V_Err_Cert_Rejected                        28
+/* These Are 'Informational' When Looking For Issuer Cert */
+X509_V_Err_Subject_Issuer_Mismatch              29
+X509_V_Err_Akid_Skid_Mismatch                   30
+X509_V_Err_Akid_Issuer_Serial_Mismatch          31
+X509_V_Err_Keyusage_No_Certsign                 32
+X509_V_Err_Unable_To_Get_Crl_Issuer             33
+X509_V_Err_Unhandled_Critical_Extension         34
+X509_V_Err_Keyusage_No_Crl_Sign                 35
+X509_V_Err_Unhandled_Critical_Crl_Extension     36
+X509_V_Err_Invalid_Non_Ca                       37
+X509_V_Err_Proxy_Path_Length_Exceeded           38
+X509_V_Err_Keyusage_No_Digital_Signature        39
+X509_V_Err_Proxy_Certificates_Not_Allowed       40
+X509_V_Err_Invalid_Extension                    41
+X509_V_Err_Invalid_Policy_Extension             42
+X509_V_Err_No_Explicit_Policy                   43
+X509_V_Err_Different_Crl_Scope                  44
+X509_V_Err_Unsupported_Extension_Feature        45
+X509_V_Err_Unnested_Resource                    46
+X509_V_Err_Permitted_Violation                  47
+X509_V_Err_Excluded_Violation                   48
+X509_V_Err_Subtree_Minmax                       49
+/* The Application Is Not Happy */
+X509_V_Err_Application_Verification             50
+X509_V_Err_Unsupported_Constraint_Type          51
+X509_V_Err_Unsupported_Constraint_Syntax        52
+X509_V_Err_Unsupported_Name_Syntax              53
+X509_V_Err_Crl_Path_Validation_Error            54
+/* Another Issuer Check Debug Option */
+X509_V_Err_Path_Loop                            55
+/* Suite B Mode Algorithm Violation */
+X509_V_Err_Suite_B_Invalid_Version              56
+X509_V_Err_Suite_B_Invalid_Algorithm            57
+X509_V_Err_Suite_B_Invalid_Curve                58
+X509_V_Err_Suite_B_Invalid_Signature_Algorithm  59
+X509_V_Err_Suite_B_Los_Not_Allowed              60
+X509_V_Err_Suite_B_Cannot_Sign_P_384_With_P_256 61
+/* Host, Email And Ip Check Errors */
+X509_V_Err_Hostname_Mismatch                    62
+X509_V_Err_Email_Mismatch                       63
+X509_V_Err_Ip_Address_Mismatch                  64
+/* Dane Tlsa Errors */
+X509_V_Err_Dane_No_Match                        65
+/* Security Level Errors */
+X509_V_Err_Ee_Key_Too_Small                     66
+X509_V_Err_Ca_Key_Too_Small                     67
+X509_V_Err_Ca_Md_Too_Weak                       68
+/* Caller Error */
+X509_V_Err_Invalid_Call                         69
+/* Issuer Lookup Error */
+X509_V_Err_Store_Lookup                         70
+/* Certificate Transparency */
+X509_V_Err_No_Valid_Scts                        71
+
+X509_V_Err_Proxy_Subject_Name_Violation         72
+/* Ocsp Status Errors */
+X509_V_Err_Ocsp_Verify_Needed                   73  /* Need Ocsp Verification */
+X509_V_Err_Ocsp_Verify_Failed                   74  /* Couldn't Verify Cert Through Ocsp */
+X509_V_Err_Ocsp_Cert_Unknown                    75  /* Certificate Wasn't Recognized By The Ocsp Responder */

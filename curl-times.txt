@@ -1,0 +1,38 @@
+\n
+\n
+\n
+Local IP:     %{local_ip}\n
+Local Port:   %{local_port}\n
+Remote IP:    %{remote_ip}\n
+Remote Port:  %{remote_port}\n
+\n
+http version: %{http_version}\n
+http code:    %{response_code}\n
+Connections:  %{num_connects}\n
+Redirects:    %{num_redirects}\n
+\n
+Timing\n
+---------------------------------------------\n
+DNS/Name Lookup:   %{time_namelookup}\n
+TCP connect time:  %{time_connect}\n
+TLS connect time:  %{time_appconnect}\n
+Pre-transfer time: %{time_pretransfer} (this is pure cpu time)\n
+Redirect time:     %{time_redirect}\n
+Start transfer:    %{time_starttransfer}\n
+                     ----------\n
+Total Time:        %{time_total}\n
+---------------------------------------------\n
+\n
+Header size:   %{size_header} Bytes\n
+Request size:  %{size_request} Bytes\n
+\n
+Download Size: %{size_download} Bytes\n
+Upload Size:   %{size_upload} Bytes\n
+\n
+Download speed: %{speed_download} Bytes/s\n
+Upload speed:   %{speed_upload} Bytes/s\n
+\n
+\n
+# Basic Usage:\n
+---------------------------------------------\n
+# curl -L -w "@curl-times.txt" -H "Host: www.example.com" -o /dev/null https://www.example.com/v1/foo  \n
