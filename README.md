@@ -66,3 +66,6 @@ https://github.com/bagder/everything-curl
 
 Cheat Sheet on Curl Performance Metrics: how to benchmark server latency with curl
 https://speedtestdemon.com/a-guide-to-curls-performance-metrics-how-to-analyze-a-speed-test-result/#What_does_curls_time_pretransfer_mean
+
+Man page on curl options and errors
+https://curl.se/docs/manpage.html#-w
