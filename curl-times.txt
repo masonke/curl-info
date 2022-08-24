@@ -1,6 +1,6 @@
 \n
-\n
-\n
+Connection information\n
+---------------------------------------------\n
 Local IP:     %{local_ip}\n
 Local Port:   %{local_port}\n
 Remote IP:    %{remote_ip}\n
@@ -19,10 +19,11 @@ TLS connect time:  %{time_appconnect}\n
 Pre-transfer time: %{time_pretransfer}\n
 Redirect time:     %{time_redirect}\n
 Start transfer:    %{time_starttransfer}\n
-                     ----------\n
+                     ==========\n
 Total Time:        %{time_total}\n
----------------------------------------------\n
 \n
+Transfer information\n
+---------------------------------------------\n
 Header size:   %{size_header} Bytes\n
 Request size:  %{size_request} Bytes\n
 \n
@@ -32,8 +33,3 @@ Upload Size:   %{size_upload} Bytes\n
 Download speed: %{speed_download} Bytes/s\n
 Upload speed:   %{speed_upload} Bytes/s\n
 \n
-\n
-\n
-# Basic Usage:\n
----------------------------------------------\n
-# curl -L -w "@curl-times.txt" -H "Host: www.example.com" -o /dev/null https://www.example.com/v1/foo \n
